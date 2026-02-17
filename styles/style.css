@@ -1,74 +1,40 @@
-/* 1. Design System Variables (Requirement 2) */
+/* 1. Variables (Requirement 2) */
 :root {
-  /* Spacing Scale */
   --space-1: 0.5rem;
-  --space-2: 1rem;
-  --space-3: 2rem;
-
-  /* Colors */
-  --bg: #ffffff;
-  --text: #111111;
-  --primary: #2563eb;
-  --muted: #6b7280;
-
-  /* Layout & Decor */
-  --max: 60rem;
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --border: 1px solid #e5e5e5;
+  --space-2: 1.5rem;
+  --space-3: 3rem;
+  --bg: #f4f4f4;
+  --text: #333333;
+  --primary: #d946ef;
+  --max: 800px;
+  --shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 /* 2. Type Scale (Requirement 3) */
-body {
-  font-family: sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  background-color: var(--bg);
-  color: var(--text);
+body { 
+  font-family: sans-serif; 
+  line-height: 1.6; 
+  background: var(--bg); 
 }
+h1 { font-size: 2.5rem; color: var(--primary); }
+h2 { font-size: 1.8rem; }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: var(--space-2);
-}
-
-h2 {
-  font-size: 1.75rem;
-}
-
-/* 3. Utility Classes (Requirement 5) */
-
-/* Centers your content on the page */
+/* 3. Spacing & Utilities (Requirement 4 & 5) */
 .container {
   max-width: var(--max);
   margin: 0 auto;
-  padding: var(--space-3);
+  padding: var(--space-2);
 }
 
-/* Adds vertical spacing between elements so they aren't cramped (Requirement 4) */
-.stack > * + * {
-  margin-top: var(--space-2);
+.stack > * + * { 
+  margin-top: var(--space-2); 
 }
 
-/* A subtle text style */
-.muted {
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-/* A reusable button */
 .btn {
   display: inline-block;
-  background-color: var(--primary);
+  background: var(--primary);
   color: white;
   padding: var(--space-1) var(--space-2);
   text-decoration: none;
-  border-radius: 4px;
-}
-
-/* A card layout for sections */
-.card {
-  padding: var(--space-2);
-  border: var(--border);
-  box-shadow: var(--shadow);
-  border-radius: 8px;
+  border-radius: 5px;
 }
