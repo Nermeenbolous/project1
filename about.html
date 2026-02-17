@@ -6,35 +6,49 @@
     <title>About Nermeen Bolous</title>
     <link rel="stylesheet" href="styles/style.css" />
     <style>
-        .profile-header { text-align: center; margin-bottom: var(--space-3); }
+        .profile-header { text-align: center; margin-bottom: var(--space-2); }
         .profile-img {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid var(--primary);
-            box-shadow: var(--shadow);
         }
-        .contact-info { font-style: normal; font-size: 0.9rem; color: var(--muted); }
+        nav { 
+            background: #fff; 
+            padding: var(--space-1); 
+            border-bottom: var(--border); 
+            text-align: center;
+            margin-bottom: var(--space-2);
+        }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--primary); font-weight: bold; }
     </style>
 </head>
 <body>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </nav>
+
     <main class="container stack">
         <header class="profile-header stack">
-            <img src="profile.jpg" alt="Nermeen Bolous" class="profile-img">
+            <img src="IMG_4959.jpg" alt="Nermeen Bolous" class="profile-img">
             <h1>Nermeen Bolous</h1>
-            <div class="contact-info stack">
-                <p>Effingham, IL [cite: 2] | (217) 821-2892 [cite: 3]</p>
-                <p>Email: nermobolous24@gmail.com [cite: 3]</p>
-            </div>
+            <p class="muted">IT- Web Design Student at Lake Land College</p>
         </header>
 
         <section class="card stack">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 303 Greenview Drive Apt#4, Effingham, IL </p>
+            <p><strong>Phone:</strong> (217) 821-2892 </p>
+            <p><strong>Email:</strong> nermobolous24@gmail.com </p>
+        </section>
+
+        <section class="card stack">
             <h2>Education</h2>
-            <p><strong>Lake Land College</strong> | Mattoon, IL [cite: 6, 8]</p>
-            <p>Associate of Applied Science – IT- Web Design Administration [cite: 9]</p>
-            <p class="muted">Graduation: 05/2026 [cite: 7, 9]</p>
+            <p><strong>Lake Land College</strong> | Mattoon, IL </p>
+            <p>Associate of Applied Science – IT- Web Design Administration (Graduation: 05/2026) </p>
         </section>
 
         <section class="card stack">
@@ -47,15 +61,8 @@
             </ul>
         </section>
 
-        <section class="card stack">
-            <h2>Technical Skills</h2>
-            <p><strong>Design:</strong> Adobe Photoshop, Illustrator, and InDesign for professional layout and vector graphics[cite: 17, 18].</p>
-            <p><strong>Development:</strong> Experienced in Adobe Dreamweaver for managing responsive websites[cite: 19].</p>
-        </section>
-
-        <footer class="stack" style="text-align: center; margin-top: var(--space-3);">
-            <a href="https://www.linkedin.com/in/nermeen-bolous" class="btn">Connect on LinkedIn</a> [cite: 4]
-            <a href="index.html" class="btn" style="background: #6b7280;">Back to Home</a>
+        <footer style="text-align: center; margin-top: var(--space-3);">
+            <a href="https://www.linkedin.com/in/nermeen-bolous" class="btn">Connect on LinkedIn</a>
         </footer>
     </main>
 
