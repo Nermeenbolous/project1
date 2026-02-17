@@ -3,19 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <title>Nermeen Bolous | Portfolio Home</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <style>
+        .hero {
+            text-align: center;
+            padding: var(--space-3) 0;
+            background: #fff;
+            border-radius: 8px;
+            border: var(--border);
+            box-shadow: var(--shadow);
+        }
+        nav { 
+            background: #fff; 
+            padding: var(--space-1); 
+            border-bottom: var(--border); 
+            text-align: center;
+            margin-bottom: var(--space-2);
+        }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--primary); font-weight: bold; }
+    </style>
 </head>
 <body>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </nav>
+
     <main class="container stack">
-        <h1>Welcome to My Website</h1>
-        <p>This page uses a centralized design system.</p>
-        
-        <section class="card stack">
-            <h2>Project Overview</h2>
-            <p class="muted">This text is muted using a utility class.</p>
-            <a href="about.html" class="btn">Go to About Page</a>
+        <section class="hero stack">
+            <h1>Nermeen Bolous</h1>
+            <p class="muted">IT-Web Design Administration Student</p>
+            <p>Welcome to my professional portfolio. I am a student at <strong>Lake Land College</strong> specializing in responsive web design and digital marketing.</p>
+            <div>
+                <a href="about.html" class="btn">View My Resume</a>
+            </div>
+        </section>
+
+        <section class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-2);">
+            <div class="card stack">
+                <h3>Graphic Design</h3>
+                <p>Expertly utilizing Adobe Photoshop and Illustrator for visual assets[cite: 17].</p>
+            </div>
+            <div class="card stack">
+                <h3>Web Development</h3>
+                <p>Experienced in Adobe Dreamweaver for building responsive websites[cite: 19].</p>
+            </div>
+            <div class="card stack">
+                <h3>Digital Marketing</h3>
+                <p>Skilled in Electronic Marketing strategies to drive online engagement[cite: 20].</p>
+            </div>
         </section>
     </main>
 
